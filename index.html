@@ -1,28 +1,14 @@
 <!DOCTYPE html>
+
 <head>
-    <body>
-        <h1>What Parking Week is it?</h1>
-        <script>
-                Date.prototype.getWeek = function() {
-                var onejan = new Date(this.getFullYear(),0,1);
-                return Math.ceil((((this - onejan) / 86400000) + onejan.getDay()+1)/7);
-                }
-        
-                var today = new Date();
-                var weekNumber = today.getWeek();
-                var AorB = (( weekNumber & 1 ) ? "odd" : "even");
-                
-                
-                if(AorB == "odd") {
-                    document.write("B");
-                } else if (AorB == "even") {
-                    document.write("A");
-                } else {
-                    document.write("Something went wrong");
-                }
-        
-        
-            
-            </script>
-    </body>
+    <title>What Parking Week is it?</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
+<body>
+    <div id="content">
+        <h1>What Parking Week is it?</h1>
+        <p id="parking"></p>
+    </div>
+    <script src="main.js"></script>
+</body>
