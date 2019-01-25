@@ -1,0 +1,31 @@
+* {
+    font-family: 'Helvetica', sans-serif;
+}
+
+body {
+    background-image: url(https://picsum.photos/1920/1080);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+}
+
+#content {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 40px;
+    width: 400px;
+    height:400px;
+    text-align: center;
+    margin: calc(50vh - 200px) auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#content p {
+    filter: none;
+    font-size: 100px;
+    margin: 20px;
+}
