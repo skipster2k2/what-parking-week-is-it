@@ -1,6 +1,5 @@
 var width = window.innerWidth
 var height = window.innerHeight
-console.log(`https://picsum.photos/${width}/${height}`)
 
 document.body.style.backgroundImage = `url(https://picsum.photos/${width}/${height})`
 Date.prototype.getWeek = function () {
