@@ -1,7 +1,7 @@
 var width = window.innerWidth
 var height = window.innerHeight
 
-document.body.style.backgroundImage = `url(https://picsum.photos/ + width + height)`
+document.body.style.backgroundImage = 'url(https://picsum.photos/' + width + '/' + height + ')';
 
 Date.prototype.getWeek = function () {
     var onejan = new Date(this.getFullYear(), 0, 1);
