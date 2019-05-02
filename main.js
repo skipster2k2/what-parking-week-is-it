@@ -16,8 +16,10 @@ var element = document.getElementById("parking")
 
 if (AorB == "odd") {
     element.innerHTML = "B";
+    element.style.color = "red";
 } else if (AorB == "even") {
     element.innerHTML = "A";
+    element.style.color = "blue";
 } else {
     element.innerHTML = "Something went wrong";
 }
